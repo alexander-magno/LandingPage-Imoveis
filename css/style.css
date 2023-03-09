@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body {
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*Divs gerais*/
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+}
+
+.clear {
+    clear: both;
+    /*Para limpar a flutuação que o float causa*/
+}
+/*******/
+
+header {
+    background-color: #d9d9d9;
+    padding: 10px 2% 30px 2%;
+    border-radius: 0 0 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.logo-1 {
+    width: 150px;
+    height: 80px;
+    float: left;
+    background-image: url('../img/Alexander\ magno.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.logo-2 {
+    width: 160px;
+    height: 100px;
+    float: right;
+    background-image: url('../img/AlexanderLogo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.cover-form {
+    width: 100%;
+    
+}
+.bg{
+    position: relative;
+    height: 560px;
+    background-image: url('../img/casa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    position: absolute;
+    right: 30px;
+    
+    width: 400px;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 18px;
+    border-radius: 15px 15px 0 0 ;
+    background-color: rgba(210, 210, 210, 0.5);
+
+}
+
+.form-container form {
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.form-container form p {
+    font-size: 13px;
+    color: white;
+}
+
+.form-container input[type="text"], input[type="email"], input[type="tel"]{
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+    line-height: 45px;
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container input[type='submit']{
+    background-color:  aliceblue;
+   width: 100%;
+   height: 40px;
+   padding: 30x;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-size: 18px;
+   border: 0;
+   border-radius: 5px;
+    
+}
+.form-container input[type='submit']:hover{
+    background-color: #dcdcdc;
+    transition: 0.3s;
+}
+
+.form-wraper:not(:first-child) {
+    margin-top: 30px;
+}
+
+.form-wraper:last-child {
+    margin-top: 30px;
+}
+
+section.chamada {
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    
+}
+
+section.chamada .container{
+    background-color: #dcdcdc;
+    padding: 40px 0 30px 0;
+}
+
+
+
+section.chamada h2 {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+}
+
+section.chamada p {
+    width: 96%;
+    max-width: 700px;
+    display: inline-block;
+}
+
+.flex-mosaico {
+    display: flex;
+    height: 300px;
+    margin-top: 5px;
+    
+    
+}
+
+
+
+.flex-mosaico:nth-child(2), .flex-mosaico:nth-child(4) {
+    flex-direction: row-reverse;
+
+}
+
+.mosaico-item-1 {
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+.mosaico-item-2 {
+    width: 40%;
+    text-align: center;
+    padding: 60px   40px;
+    background-color: #dcdcdc;
+    
+}
+
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    background-color: #dcdcdc;
+    border-radius: 5px 5px 0 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.contatcs {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-2 a img{
+    width: 50px;
+    display: inline-block;
+    
+}
+
+@media screen and (max-width:768px){
+    .flex-mosaico{
+        display: block;
+        
+    }
+    .mosaico-item-1{
+        width: 100%;
+        height: 200px;
+    }
+    .mosaico-item-2{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (max-width:960px) {
+    .bg{
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .form-container {
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+
+    }
+}
+
+@media screen and (max-width: 510px){
+    header {
+        text-align: center;
+    }
+    .logo-1, .logo-2 {
+        margin-top: 10px;
+        float: none;
+        display: inline-block;
+    }
+}
+
+/*Parei em 1.11:27 aula 13*/
