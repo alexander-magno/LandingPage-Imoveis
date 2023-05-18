@@ -182,9 +182,11 @@ section.chamada p {
     text-align: center;
     padding: 60px   40px;
     background-color: #dcdcdc;
-    
 }
-
+.mosaico-item-2 p {
+    text-align: justify;
+    letter-spacing: 1px;
+}
 
 
 
